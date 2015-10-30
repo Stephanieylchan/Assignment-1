@@ -1,12 +1,11 @@
 var mongoose = require('mongoose');
 
 var GraphDataSchema = new mongoose.Schema({
-  Year: String,
-  Sales: String,
-  Expenses: String
+  Name: String,
+  Population_Estimate: String,
 }, 
 {
-  collection: 'graph-data-collection'
+  collection: 'population-collection'
 });
 
 mongoose.model('GraphData', GraphDataSchema);
